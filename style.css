@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
 }
 
 body > * {
@@ -48,6 +49,12 @@ body > * {
   flex-direction: column;
 }
 
+#c2-header {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
 .container-two div ul {
   list-style-type: none;
   display: flex;
@@ -56,6 +63,14 @@ body > * {
 .container-three {
   display: flex;
   flex-direction: column;
+  background-color: #e5e7eb;
+}
+
+#c3-quote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1f2937;
 }
 
 .container-four {
@@ -65,6 +80,10 @@ body > * {
 .container-four div {
   background-color: #3882f6;
   flex: 1;
+}
+
+.container-four button {
+  background-color: #3882f6;
 }
 
 .navbar,
