@@ -5,7 +5,7 @@ body {
 }
 
 body > * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 0 10%;
 }
 
@@ -28,12 +28,36 @@ body > * {
 
 .container-one {
   display: flex;
+  padding-bottom: 100px;
+}
+
+.container-one div {
+  flex: 1;
+}
+
+#c1-left {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
 }
 
 #c1-header {
   font-size: 48px;
   color: #f9faf8;
   font-weight: 800;
+}
+
+#c1-header p {
+  margin-bottom: 0;
+}
+
+#c1-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  padding-top: 0px;
+  margin-top: 60px;
 }
 
 .navbar a,
@@ -47,23 +71,39 @@ body > * {
 .container-two {
   display: flex;
   flex-direction: column;
+  padding-bottom: 75px;
 }
 
 #c2-header {
   font-size: 36px;
   font-weight: 800;
   color: #1f2937;
+  display: flex;
+  justify-content: center;
 }
 
 .container-two div ul {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.c2-li-img {
+  border: 3px solid #3882f6;
+  border-radius: 6px;
+  height: 150px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-three {
   display: flex;
   flex-direction: column;
   background-color: #e5e7eb;
+  padding-bottom: 50px;
 }
 
 #c3-quote {
@@ -71,23 +111,65 @@ body > * {
   font-weight: 300;
   font-style: italic;
   color: #1f2937;
+  margin: 75px 50px 1px;
+}
+
+#c3-signer {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  padding-right: 65px;
+}
+
+#c3-signer p {
+  margin-top: 5px;
+  font-weight: 600;
 }
 
 .container-four {
   display: flex;
+  margin: 40px 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border: 0px;
+  border: 1px solid #3882f6;
+  border-radius: 6px;
+  background-color: #3882f6;
 }
 
 .container-four div {
-  background-color: #3882f6;
-  flex: 1;
+  flex: auto;
 }
 
-.container-four button {
+#c4-left {
+  color: #f9faf8;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+#c4-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: 1px solid #f9faf8;
   background-color: #3882f6;
+  border-radius: 6px;
+  width: 100px;
+  height: 35px;
+  color: #f9faf8;
 }
 
 .navbar,
 .container-one,
 footer {
   background-color: #1f2937;
+  color: #f9faf8;
+  display: flex;
+  justify-content: center;
 }
